@@ -10,6 +10,34 @@ width: 90%;
 max-width: 1100px;
 margin: auto;
 }
+.team {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.team h2 {
+text-align: center;
+margin-bottom: 25px;
+font-size: 30px;
+}
+
+.team-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.member h3 {
+margin-top: 0;
+color: #ff23d0;
+font-weight: 600;
+}
+
+.member p {
+margin: 5px 0 0;
+color: #e6c9ff;
+
+}
 
 .header {
 display: flex;
