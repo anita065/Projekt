@@ -77,11 +77,18 @@ color: #e6c9ff;
 }
 
 .glass {
-background: rgba(255, 255, 255, 0.05);
-backdrop-filter: blur(12px);
-padding: 25px;
-border-radius: 14px;
-border: 1px solid rgba(255, 0, 255, 0.18);
+background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(14px);
+padding: 30px;
+border-radius: 18px;
+border: 1px solid rgba(255, 0, 255, 0.25);
+box-shadow: 0 0 25px rgba(255, 0, 255, 0.10);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glass:hover {
+transform: translateY(-6px);
+box-shadow: 0 0 35px rgba(255, 0, 255, 0.25);
 }
 
 .about {
@@ -111,4 +118,60 @@ margin-top: 60px;
 padding: 18px;
 text-align: center;
 background: rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+text-align: center;
+font-size: 32px;
+margin-bottom: 10px;
+position: relative;
+display: inline-block;
+}
+
+.section-title::after {
+content: "";
+position: absolute;
+bottom: -8px;
+left: 50%;
+transform: translateX(-50%);
+width: 60px;
+height: 3px;
+background: linear-gradient(to right, #ff23d0, #b254ff);
+border-radius: 2px;
+}
+.member-card {
+text-align: center;
+padding: 25px;
+border-radius: 18px;
+overflow: hidden;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.member-card img {
+width: 140px;
+height: 140px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 15px;
+border: 3px solid rgba(255, 0, 255, 0.3);
+box-shadow: 0 0 20px rgba(255, 0, 255, 0.15);
+}
+
+.member-card h3 {
+margin: 10px 0 5px;
+font-size: 20px;
+color: #ff23d0;
+font-weight: 600;
+}
+
+.member-card p {
+margin: 0;
+color: #e6c9ff;
+font-size: 15px;
+}
+
+.member-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 0 35px rgba(255, 0, 255, 0.35);
+border: 1px solid rgba(255, 0, 255, 0.25);
 }
