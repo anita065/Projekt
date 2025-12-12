@@ -311,8 +311,66 @@ font-size: 20px;
     text-decoration: underline;
 }
 
+.forgot-box {
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
 
-/* register formaaa */
+.forgot {
+    color: #ff23d0;
+    font-size: 14px;
+    text-decoration: none;
+}
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.social-login p {
+    color: #e6c9ff;
+    margin-bottom: 12px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-buttons button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    transition: 0.25s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.social-buttons .google {
+    background: #DB4437;
+}
+
+.social-buttons .facebook {
+    background: #1877F2;
+}
+
+.social-buttons .instagram {
+    background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+}
+
+.social-buttons button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+}
 
 .center-form {
     display: flex;
